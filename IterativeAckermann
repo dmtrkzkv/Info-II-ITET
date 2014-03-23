@@ -25,18 +25,16 @@ public class IterativeAckermann {
 				myStack.push(n - 1);
 				myStack.push(n);
 				myStack.push(m - 1);
-				// System.out.println(myStack.toString());
+
 				m = myStack.pop();
 				n = myStack.pop();
-				// System.out.println("\n" + myStack.toString());
 
 			} else if (n != 0 && m == 0) {
 				myStack.push(n - 1);
 				myStack.push(1);
-				// System.out.println("\n" + myStack.toString());
+
 				m = myStack.pop();
 				n = myStack.pop();
-				// System.out.println("\n" + myStack.toString());
 
 			} else { // if n == 0
 				result = m + 1;

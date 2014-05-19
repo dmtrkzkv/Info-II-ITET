@@ -138,7 +138,7 @@ public class Test1 implements ReversiPlayer{
 	 * Ultimate evaluation function
     	*/
 	private static double evaluate (GameBoard gb) throws OutOfBoundsException {	
-		int V[][] = {{ 4, -3,  2,  2,  2,  2, -3,  4 },
+		int V[][] = 	{{ 4, -3,  2,  2,  2,  2, -3,  4 },
 			        { -3, -4, -1, -1, -1, -1, -4, -3 },
 			        {  2, -1,  1,  0,  0,  1, -1,  2 },
 			        {  2, -1,  0,  1,  1,  0, -1,  2 },

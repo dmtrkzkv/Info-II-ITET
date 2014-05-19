@@ -135,13 +135,7 @@ public class Test1 implements ReversiPlayer{
 	
 	
 	/** 
-	 * Primitive evaluation function: the bigger difference between player's and 
-	 * opponent's stones after the move is the higher value this move has. Value 
-	 * of the move equals difference between player's and opponent's stones after
-	 * the move.
-	 * @param gb current state of GameBoard
-	 * @return Difference between player's and opponent's stones in the provided state of GameBoard
-	 * @throws OutOfBoundsException 
+	 * Ultimate evaluation function
     */
 	private static double evaluate (GameBoard gb) throws OutOfBoundsException {	
 		int V[][] = {{ 4, -3,  2,  2,  2,  2, -3,  4 },

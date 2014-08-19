@@ -67,7 +67,8 @@ public class Matilda implements ReversiPlayer{
 		
 		return bestMove.coord;
 	}
-		
+	
+	// BestMove max() and BestMove min() are implementing the MinMax search algorithm with alpha-beta pruning 	
 	private static BestMove max(int maxDepth, long timeout, GameBoard gb, int depth, 
 			double alpha, double beta) throws Timeout, OutOfBoundsException {
 		if (System.currentTimeMillis() > timeout) throw new Timeout();
